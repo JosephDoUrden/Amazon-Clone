@@ -9,6 +9,7 @@ const app = express();
 const DB = process.env.MongoDbPass;
 
 //middleware
+app.use(express.json());
 app.use(authRouter);
 
 //Connections
