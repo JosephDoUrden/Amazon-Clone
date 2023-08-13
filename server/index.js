@@ -6,8 +6,7 @@ const authRouter = require("./routes/auth");
 
 const PORT = 3000;
 const app = express();
-const MongoDbPass = process.env.MongoDbPass;
-const DB = `mongodb+srv://yusufhansck:${MongoDbPass}@cluster0.ruy4e93.mongodb.net/?retryWrites=true&w=majority`;
+const DB = process.env.MongoDbPass;
 
 //middleware
 app.use(authRouter);
